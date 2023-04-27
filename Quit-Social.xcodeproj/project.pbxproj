@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04003C7429D6C2070086AB64 /* ApprovalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04003C7329D6C2070086AB64 /* ApprovalView.swift */; };
+		04003C7629D6D1070086AB64 /* AppSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04003C7529D6D1070086AB64 /* AppSelection.swift */; };
+		04003C7829D6D5730086AB64 /* SelectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04003C7729D6D5730086AB64 /* SelectedView.swift */; };
+		043D9A1029EC95F700CB468B /* WeekdaySelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D9A0F29EC95F700CB468B /* WeekdaySelect.swift */; };
+		043D9A1229EC96D600CB468B /* StatefulPreviewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D9A1129EC96D600CB468B /* StatefulPreviewWrapper.swift */; };
+		046057AB29DAC98A001AD11A /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046057AA29DAC989001AD11A /* DeviceActivity.framework */; };
+		046057AE29DAC98A001AD11A /* DeviceActivityMonitorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046057AD29DAC98A001AD11A /* DeviceActivityMonitorExtension.swift */; };
+		046057B329DAC98A001AD11A /* MyDeviceActivityMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 046057A829DAC989001AD11A /* MyDeviceActivityMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		04847FF429D94D8F0064E28C /* RestrictionSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04847FF329D94D8F0064E28C /* RestrictionSchedule.swift */; };
+		04E87FED29E3A12B00185E4D /* AppSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04003C7529D6D1070086AB64 /* AppSelection.swift */; };
+		04E87FEF29E4249400185E4D /* AppGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E87FEE29E4249400185E4D /* AppGroupView.swift */; };
+		04FA31E329D6B20C00761BE6 /* Quit_SocialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA31E229D6B20C00761BE6 /* Quit_SocialApp.swift */; };
+		04FA31E529D6B20C00761BE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA31E429D6B20C00761BE6 /* ContentView.swift */; };
+		04FA31E729D6B20F00761BE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FA31E629D6B20F00761BE6 /* Assets.xcassets */; };
+		04FA31EA29D6B20F00761BE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FA31E929D6B20F00761BE6 /* Preview Assets.xcassets */; };
+		04FA31F429D6B20F00761BE6 /* Quit_SocialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA31F329D6B20F00761BE6 /* Quit_SocialTests.swift */; };
+		04FA31FE29D6B20F00761BE6 /* Quit_SocialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA31FD29D6B20F00761BE6 /* Quit_SocialUITests.swift */; };
+		04FA320029D6B20F00761BE6 /* Quit_SocialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA31FF29D6B20F00761BE6 /* Quit_SocialUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		046057B129DAC98A001AD11A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04FA31D729D6B20C00761BE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 046057A729DAC989001AD11A;
+			remoteInfo = MyDeviceActivityMonitor;
+		};
+		04FA31F029D6B20F00761BE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04FA31D729D6B20C00761BE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04FA31DE29D6B20C00761BE6;
+			remoteInfo = "Quit-Social";
+		};
+		04FA31FA29D6B20F00761BE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04FA31D729D6B20C00761BE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04FA31DE29D6B20C00761BE6;
+			remoteInfo = "Quit-Social";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		046057B729DAC98A001AD11A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				046057B329DAC98A001AD11A /* MyDeviceActivityMonitor.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04003C7229D6BABC0086AB64 /* Quit-Social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Quit-Social.entitlements"; sourceTree = "<group>"; };
+		04003C7329D6C2070086AB64 /* ApprovalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovalView.swift; sourceTree = "<group>"; };
+		04003C7529D6D1070086AB64 /* AppSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSelection.swift; sourceTree = "<group>"; };
+		04003C7729D6D5730086AB64 /* SelectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedView.swift; sourceTree = "<group>"; };
+		043D9A0F29EC95F700CB468B /* WeekdaySelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdaySelect.swift; sourceTree = "<group>"; };
+		043D9A1129EC96D600CB468B /* StatefulPreviewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatefulPreviewWrapper.swift; sourceTree = "<group>"; };
+		046057A829DAC989001AD11A /* MyDeviceActivityMonitor.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyDeviceActivityMonitor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		046057AA29DAC989001AD11A /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = System/Library/Frameworks/DeviceActivity.framework; sourceTree = SDKROOT; };
+		046057AD29DAC98A001AD11A /* DeviceActivityMonitorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceActivityMonitorExtension.swift; sourceTree = "<group>"; };
+		046057AF29DAC98A001AD11A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046057B029DAC98A001AD11A /* MyDeviceActivityMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyDeviceActivityMonitor.entitlements; sourceTree = "<group>"; };
+		04847FF329D94D8F0064E28C /* RestrictionSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictionSchedule.swift; sourceTree = "<group>"; };
+		04E87FEE29E4249400185E4D /* AppGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroupView.swift; sourceTree = "<group>"; };
+		04FA31DF29D6B20C00761BE6 /* Quit-Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quit-Social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FA31E229D6B20C00761BE6 /* Quit_SocialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quit_SocialApp.swift; sourceTree = "<group>"; };
+		04FA31E429D6B20C00761BE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04FA31E629D6B20F00761BE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04FA31E929D6B20F00761BE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04FA31EF29D6B20F00761BE6 /* Quit-SocialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quit-SocialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FA31F329D6B20F00761BE6 /* Quit_SocialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quit_SocialTests.swift; sourceTree = "<group>"; };
+		04FA31F929D6B20F00761BE6 /* Quit-SocialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quit-SocialUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FA31FD29D6B20F00761BE6 /* Quit_SocialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quit_SocialUITests.swift; sourceTree = "<group>"; };
+		04FA31FF29D6B20F00761BE6 /* Quit_SocialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quit_SocialUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		046057A529DAC989001AD11A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046057AB29DAC98A001AD11A /* DeviceActivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FA31DC29D6B20C00761BE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FA31EC29D6B20F00761BE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FA31F629D6B20F00761BE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		046057A929DAC989001AD11A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				046057AA29DAC989001AD11A /* DeviceActivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		046057AC29DAC98A001AD11A /* MyDeviceActivityMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				046057AD29DAC98A001AD11A /* DeviceActivityMonitorExtension.swift */,
+				046057AF29DAC98A001AD11A /* Info.plist */,
+				046057B029DAC98A001AD11A /* MyDeviceActivityMonitor.entitlements */,
+			);
+			path = MyDeviceActivityMonitor;
+			sourceTree = "<group>";
+		};
+		04FA31D629D6B20C00761BE6 = {
+			isa = PBXGroup;
+			children = (
+				04FA31E129D6B20C00761BE6 /* Quit-Social */,
+				04FA31F229D6B20F00761BE6 /* Quit-SocialTests */,
+				04FA31FC29D6B20F00761BE6 /* Quit-SocialUITests */,
+				046057AC29DAC98A001AD11A /* MyDeviceActivityMonitor */,
+				046057A929DAC989001AD11A /* Frameworks */,
+				04FA31E029D6B20C00761BE6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04FA31E029D6B20C00761BE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04FA31DF29D6B20C00761BE6 /* Quit-Social.app */,
+				04FA31EF29D6B20F00761BE6 /* Quit-SocialTests.xctest */,
+				04FA31F929D6B20F00761BE6 /* Quit-SocialUITests.xctest */,
+				046057A829DAC989001AD11A /* MyDeviceActivityMonitor.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04FA31E129D6B20C00761BE6 /* Quit-Social */ = {
+			isa = PBXGroup;
+			children = (
+				04003C7229D6BABC0086AB64 /* Quit-Social.entitlements */,
+				04FA31E229D6B20C00761BE6 /* Quit_SocialApp.swift */,
+				04003C7329D6C2070086AB64 /* ApprovalView.swift */,
+				04FA31E429D6B20C00761BE6 /* ContentView.swift */,
+				04E87FEE29E4249400185E4D /* AppGroupView.swift */,
+				043D9A0F29EC95F700CB468B /* WeekdaySelect.swift */,
+				043D9A1129EC96D600CB468B /* StatefulPreviewWrapper.swift */,
+				04847FF329D94D8F0064E28C /* RestrictionSchedule.swift */,
+				04003C7729D6D5730086AB64 /* SelectedView.swift */,
+				04003C7529D6D1070086AB64 /* AppSelection.swift */,
+				04FA31E629D6B20F00761BE6 /* Assets.xcassets */,
+				04FA31E829D6B20F00761BE6 /* Preview Content */,
+			);
+			path = "Quit-Social";
+			sourceTree = "<group>";
+		};
+		04FA31E829D6B20F00761BE6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				04FA31E929D6B20F00761BE6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04FA31F229D6B20F00761BE6 /* Quit-SocialTests */ = {
+			isa = PBXGroup;
+			children = (
+				04FA31F329D6B20F00761BE6 /* Quit_SocialTests.swift */,
+			);
+			path = "Quit-SocialTests";
+			sourceTree = "<group>";
+		};
+		04FA31FC29D6B20F00761BE6 /* Quit-SocialUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04FA31FD29D6B20F00761BE6 /* Quit_SocialUITests.swift */,
+				04FA31FF29D6B20F00761BE6 /* Quit_SocialUITestsLaunchTests.swift */,
+			);
+			path = "Quit-SocialUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		046057A729DAC989001AD11A /* MyDeviceActivityMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046057B429DAC98A001AD11A /* Build configuration list for PBXNativeTarget "MyDeviceActivityMonitor" */;
+			buildPhases = (
+				046057A429DAC989001AD11A /* Sources */,
+				046057A529DAC989001AD11A /* Frameworks */,
+				046057A629DAC989001AD11A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyDeviceActivityMonitor;
+			productName = MyDeviceActivityMonitor;
+			productReference = 046057A829DAC989001AD11A /* MyDeviceActivityMonitor.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		04FA31DE29D6B20C00761BE6 /* Quit-Social */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FA320329D6B20F00761BE6 /* Build configuration list for PBXNativeTarget "Quit-Social" */;
+			buildPhases = (
+				04FA31DB29D6B20C00761BE6 /* Sources */,
+				04FA31DC29D6B20C00761BE6 /* Frameworks */,
+				04FA31DD29D6B20C00761BE6 /* Resources */,
+				046057B729DAC98A001AD11A /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				046057B229DAC98A001AD11A /* PBXTargetDependency */,
+			);
+			name = "Quit-Social";
+			productName = "Quit-Social";
+			productReference = 04FA31DF29D6B20C00761BE6 /* Quit-Social.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04FA31EE29D6B20F00761BE6 /* Quit-SocialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FA320629D6B20F00761BE6 /* Build configuration list for PBXNativeTarget "Quit-SocialTests" */;
+			buildPhases = (
+				04FA31EB29D6B20F00761BE6 /* Sources */,
+				04FA31EC29D6B20F00761BE6 /* Frameworks */,
+				04FA31ED29D6B20F00761BE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04FA31F129D6B20F00761BE6 /* PBXTargetDependency */,
+			);
+			name = "Quit-SocialTests";
+			productName = "Quit-SocialTests";
+			productReference = 04FA31EF29D6B20F00761BE6 /* Quit-SocialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04FA31F829D6B20F00761BE6 /* Quit-SocialUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FA320929D6B20F00761BE6 /* Build configuration list for PBXNativeTarget "Quit-SocialUITests" */;
+			buildPhases = (
+				04FA31F529D6B20F00761BE6 /* Sources */,
+				04FA31F629D6B20F00761BE6 /* Frameworks */,
+				04FA31F729D6B20F00761BE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04FA31FB29D6B20F00761BE6 /* PBXTargetDependency */,
+			);
+			name = "Quit-SocialUITests";
+			productName = "Quit-SocialUITests";
+			productReference = 04FA31F929D6B20F00761BE6 /* Quit-SocialUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04FA31D729D6B20C00761BE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					046057A729DAC989001AD11A = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					04FA31DE29D6B20C00761BE6 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					04FA31EE29D6B20F00761BE6 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 04FA31DE29D6B20C00761BE6;
+					};
+					04FA31F829D6B20F00761BE6 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 04FA31DE29D6B20C00761BE6;
+					};
+				};
+			};
+			buildConfigurationList = 04FA31DA29D6B20C00761BE6 /* Build configuration list for PBXProject "Quit-Social" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04FA31D629D6B20C00761BE6;
+			productRefGroup = 04FA31E029D6B20C00761BE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04FA31DE29D6B20C00761BE6 /* Quit-Social */,
+				04FA31EE29D6B20F00761BE6 /* Quit-SocialTests */,
+				04FA31F829D6B20F00761BE6 /* Quit-SocialUITests */,
+				046057A729DAC989001AD11A /* MyDeviceActivityMonitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		046057A629DAC989001AD11A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FA31DD29D6B20C00761BE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FA31EA29D6B20F00761BE6 /* Preview Assets.xcassets in Resources */,
+				04FA31E729D6B20F00761BE6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FA31ED29D6B20F00761BE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FA31F729D6B20F00761BE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		046057A429DAC989001AD11A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E87FED29E3A12B00185E4D /* AppSelection.swift in Sources */,
+				046057AE29DAC98A001AD11A /* DeviceActivityMonitorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FA31DB29D6B20C00761BE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043D9A1029EC95F700CB468B /* WeekdaySelect.swift in Sources */,
+				043D9A1229EC96D600CB468B /* StatefulPreviewWrapper.swift in Sources */,
+				04003C7629D6D1070086AB64 /* AppSelection.swift in Sources */,
+				04003C7429D6C2070086AB64 /* ApprovalView.swift in Sources */,
+				04003C7829D6D5730086AB64 /* SelectedView.swift in Sources */,
+				04847FF429D94D8F0064E28C /* RestrictionSchedule.swift in Sources */,
+				04FA31E529D6B20C00761BE6 /* ContentView.swift in Sources */,
+				04FA31E329D6B20C00761BE6 /* Quit_SocialApp.swift in Sources */,
+				04E87FEF29E4249400185E4D /* AppGroupView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FA31EB29D6B20F00761BE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FA31F429D6B20F00761BE6 /* Quit_SocialTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FA31F529D6B20F00761BE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FA320029D6B20F00761BE6 /* Quit_SocialUITestsLaunchTests.swift in Sources */,
+				04FA31FE29D6B20F00761BE6 /* Quit_SocialUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		046057B229DAC98A001AD11A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 046057A729DAC989001AD11A /* MyDeviceActivityMonitor */;
+			targetProxy = 046057B129DAC98A001AD11A /* PBXContainerItemProxy */;
+		};
+		04FA31F129D6B20F00761BE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04FA31DE29D6B20C00761BE6 /* Quit-Social */;
+			targetProxy = 04FA31F029D6B20F00761BE6 /* PBXContainerItemProxy */;
+		};
+		04FA31FB29D6B20F00761BE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04FA31DE29D6B20C00761BE6 /* Quit-Social */;
+			targetProxy = 04FA31FA29D6B20F00761BE6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		046057B529DAC98A001AD11A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MyDeviceActivityMonitor/MyDeviceActivityMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5W3VHN46BQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyDeviceActivityMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyDeviceActivityMonitor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tonyjiang02.Quit-Social.MyDeviceActivityMonitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		046057B629DAC98A001AD11A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MyDeviceActivityMonitor/MyDeviceActivityMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5W3VHN46BQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyDeviceActivityMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyDeviceActivityMonitor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tonyjiang02.Quit-Social.MyDeviceActivityMonitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04FA320129D6B20F00761BE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04FA320229D6B20F00761BE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04FA320429D6B20F00761BE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Quit-Social/Quit-Social.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Quit-Social/Preview Content\"";
+				DEVELOPMENT_TEAM = 5W3VHN46BQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Quit-Social/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tonyjiang02.Quit-Social";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04FA320529D6B20F00761BE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Quit-Social/Quit-Social.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Quit-Social/Preview Content\"";
+				DEVELOPMENT_TEAM = 5W3VHN46BQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Quit-Social/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tonyjiang02.Quit-Social";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04FA320729D6B20F00761BE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5W3VHN46BQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tonyjiang02.Quit-SocialTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quit-Social.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Quit-Social";
+			};
+			name = Debug;
+		};
+		04FA320829D6B20F00761BE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5W3VHN46BQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tonyjiang02.Quit-SocialTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quit-Social.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Quit-Social";
+			};
+			name = Release;
+		};
+		04FA320A29D6B20F00761BE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5W3VHN46BQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tonyjiang02.Quit-SocialUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Quit-Social";
+			};
+			name = Debug;
+		};
+		04FA320B29D6B20F00761BE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5W3VHN46BQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tonyjiang02.Quit-SocialUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Quit-Social";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		046057B429DAC98A001AD11A /* Build configuration list for PBXNativeTarget "MyDeviceActivityMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046057B529DAC98A001AD11A /* Debug */,
+				046057B629DAC98A001AD11A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04FA31DA29D6B20C00761BE6 /* Build configuration list for PBXProject "Quit-Social" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FA320129D6B20F00761BE6 /* Debug */,
+				04FA320229D6B20F00761BE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04FA320329D6B20F00761BE6 /* Build configuration list for PBXNativeTarget "Quit-Social" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FA320429D6B20F00761BE6 /* Debug */,
+				04FA320529D6B20F00761BE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04FA320629D6B20F00761BE6 /* Build configuration list for PBXNativeTarget "Quit-SocialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FA320729D6B20F00761BE6 /* Debug */,
+				04FA320829D6B20F00761BE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04FA320929D6B20F00761BE6 /* Build configuration list for PBXNativeTarget "Quit-SocialUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FA320A29D6B20F00761BE6 /* Debug */,
+				04FA320B29D6B20F00761BE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04FA31D729D6B20C00761BE6 /* Project object */;
+}
