@@ -10,16 +10,20 @@
 		04003C7429D6C2070086AB64 /* ApprovalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04003C7329D6C2070086AB64 /* ApprovalView.swift */; };
 		04003C7629D6D1070086AB64 /* AppSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04003C7529D6D1070086AB64 /* AppSelection.swift */; };
 		04003C7829D6D5730086AB64 /* SelectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04003C7729D6D5730086AB64 /* SelectedView.swift */; };
+		041F7E3B2A10EC2C0069D8FC /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F7E3A2A10EC2C0069D8FC /* DashboardViewModel.swift */; };
+		041F7E3F2A10F0510069D8FC /* AppGroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F7E3E2A10F0510069D8FC /* AppGroupViewModel.swift */; };
+		041F7E402A10F72A0069D8FC /* AppSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04003C7529D6D1070086AB64 /* AppSelection.swift */; };
 		043D9A1029EC95F700CB468B /* WeekdaySelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D9A0F29EC95F700CB468B /* WeekdaySelect.swift */; };
 		043D9A1229EC96D600CB468B /* StatefulPreviewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D9A1129EC96D600CB468B /* StatefulPreviewWrapper.swift */; };
+		045D06702A16C8AA001CECA9 /* TabNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D066F2A16C8AA001CECA9 /* TabNavigationView.swift */; };
 		046057AB29DAC98A001AD11A /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046057AA29DAC989001AD11A /* DeviceActivity.framework */; };
 		046057AE29DAC98A001AD11A /* DeviceActivityMonitorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046057AD29DAC98A001AD11A /* DeviceActivityMonitorExtension.swift */; };
 		046057B329DAC98A001AD11A /* MyDeviceActivityMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 046057A829DAC989001AD11A /* MyDeviceActivityMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		04847FF429D94D8F0064E28C /* RestrictionSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04847FF329D94D8F0064E28C /* RestrictionSchedule.swift */; };
-		04E87FED29E3A12B00185E4D /* AppSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04003C7529D6D1070086AB64 /* AppSelection.swift */; };
+		0491073A2A0DABAF00680CAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049107392A0DABAF00680CAA /* ContentView.swift */; };
 		04E87FEF29E4249400185E4D /* AppGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E87FEE29E4249400185E4D /* AppGroupView.swift */; };
+		04E985F129FB39460036D1EF /* ScoreBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E985F029FB39460036D1EF /* ScoreBoardView.swift */; };
 		04FA31E329D6B20C00761BE6 /* Quit_SocialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA31E229D6B20C00761BE6 /* Quit_SocialApp.swift */; };
-		04FA31E529D6B20C00761BE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA31E429D6B20C00761BE6 /* ContentView.swift */; };
 		04FA31E729D6B20F00761BE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FA31E629D6B20F00761BE6 /* Assets.xcassets */; };
 		04FA31EA29D6B20F00761BE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FA31E929D6B20F00761BE6 /* Preview Assets.xcassets */; };
 		04FA31F429D6B20F00761BE6 /* Quit_SocialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA31F329D6B20F00761BE6 /* Quit_SocialTests.swift */; };
@@ -70,18 +74,22 @@
 		04003C7329D6C2070086AB64 /* ApprovalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovalView.swift; sourceTree = "<group>"; };
 		04003C7529D6D1070086AB64 /* AppSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSelection.swift; sourceTree = "<group>"; };
 		04003C7729D6D5730086AB64 /* SelectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedView.swift; sourceTree = "<group>"; };
+		041F7E3A2A10EC2C0069D8FC /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		041F7E3E2A10F0510069D8FC /* AppGroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroupViewModel.swift; sourceTree = "<group>"; };
 		043D9A0F29EC95F700CB468B /* WeekdaySelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdaySelect.swift; sourceTree = "<group>"; };
 		043D9A1129EC96D600CB468B /* StatefulPreviewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatefulPreviewWrapper.swift; sourceTree = "<group>"; };
+		045D066F2A16C8AA001CECA9 /* TabNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationView.swift; sourceTree = "<group>"; };
 		046057A829DAC989001AD11A /* MyDeviceActivityMonitor.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyDeviceActivityMonitor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		046057AA29DAC989001AD11A /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = System/Library/Frameworks/DeviceActivity.framework; sourceTree = SDKROOT; };
 		046057AD29DAC98A001AD11A /* DeviceActivityMonitorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceActivityMonitorExtension.swift; sourceTree = "<group>"; };
 		046057AF29DAC98A001AD11A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		046057B029DAC98A001AD11A /* MyDeviceActivityMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyDeviceActivityMonitor.entitlements; sourceTree = "<group>"; };
 		04847FF329D94D8F0064E28C /* RestrictionSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictionSchedule.swift; sourceTree = "<group>"; };
+		049107392A0DABAF00680CAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04E87FEE29E4249400185E4D /* AppGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroupView.swift; sourceTree = "<group>"; };
+		04E985F029FB39460036D1EF /* ScoreBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardView.swift; sourceTree = "<group>"; };
 		04FA31DF29D6B20C00761BE6 /* Quit-Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quit-Social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FA31E229D6B20C00761BE6 /* Quit_SocialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quit_SocialApp.swift; sourceTree = "<group>"; };
-		04FA31E429D6B20C00761BE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04FA31E629D6B20F00761BE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04FA31E929D6B20F00761BE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04FA31EF29D6B20F00761BE6 /* Quit-SocialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quit-SocialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +132,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041F7E3C2A10EFFD0069D8FC /* AppGroup */ = {
+			isa = PBXGroup;
+			children = (
+				043D9A0F29EC95F700CB468B /* WeekdaySelect.swift */,
+				04E87FEE29E4249400185E4D /* AppGroupView.swift */,
+				041F7E3E2A10F0510069D8FC /* AppGroupViewModel.swift */,
+			);
+			path = AppGroup;
+			sourceTree = "<group>";
+		};
+		041F7E3D2A10F0270069D8FC /* FamilyControls */ = {
+			isa = PBXGroup;
+			children = (
+				04003C7529D6D1070086AB64 /* AppSelection.swift */,
+				04003C7329D6C2070086AB64 /* ApprovalView.swift */,
+				04847FF329D94D8F0064E28C /* RestrictionSchedule.swift */,
+			);
+			path = FamilyControls;
+			sourceTree = "<group>";
+		};
 		046057A929DAC989001AD11A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,14 +198,14 @@
 			children = (
 				04003C7229D6BABC0086AB64 /* Quit-Social.entitlements */,
 				04FA31E229D6B20C00761BE6 /* Quit_SocialApp.swift */,
-				04003C7329D6C2070086AB64 /* ApprovalView.swift */,
-				04FA31E429D6B20C00761BE6 /* ContentView.swift */,
-				04E87FEE29E4249400185E4D /* AppGroupView.swift */,
-				043D9A0F29EC95F700CB468B /* WeekdaySelect.swift */,
+				041F7E3C2A10EFFD0069D8FC /* AppGroup */,
+				049107392A0DABAF00680CAA /* ContentView.swift */,
+				045D066F2A16C8AA001CECA9 /* TabNavigationView.swift */,
+				041F7E3A2A10EC2C0069D8FC /* DashboardViewModel.swift */,
+				04E985F029FB39460036D1EF /* ScoreBoardView.swift */,
 				043D9A1129EC96D600CB468B /* StatefulPreviewWrapper.swift */,
-				04847FF329D94D8F0064E28C /* RestrictionSchedule.swift */,
+				041F7E3D2A10F0270069D8FC /* FamilyControls */,
 				04003C7729D6D5730086AB64 /* SelectedView.swift */,
-				04003C7529D6D1070086AB64 /* AppSelection.swift */,
 				04FA31E629D6B20F00761BE6 /* Assets.xcassets */,
 				04FA31E829D6B20F00761BE6 /* Preview Content */,
 			);
@@ -369,7 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04E87FED29E3A12B00185E4D /* AppSelection.swift in Sources */,
+				041F7E402A10F72A0069D8FC /* AppSelection.swift in Sources */,
 				046057AE29DAC98A001AD11A /* DeviceActivityMonitorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,11 +408,15 @@
 			files = (
 				043D9A1029EC95F700CB468B /* WeekdaySelect.swift in Sources */,
 				043D9A1229EC96D600CB468B /* StatefulPreviewWrapper.swift in Sources */,
+				04E985F129FB39460036D1EF /* ScoreBoardView.swift in Sources */,
 				04003C7629D6D1070086AB64 /* AppSelection.swift in Sources */,
+				041F7E3B2A10EC2C0069D8FC /* DashboardViewModel.swift in Sources */,
 				04003C7429D6C2070086AB64 /* ApprovalView.swift in Sources */,
 				04003C7829D6D5730086AB64 /* SelectedView.swift in Sources */,
+				045D06702A16C8AA001CECA9 /* TabNavigationView.swift in Sources */,
+				0491073A2A0DABAF00680CAA /* ContentView.swift in Sources */,
+				041F7E3F2A10F0510069D8FC /* AppGroupViewModel.swift in Sources */,
 				04847FF429D94D8F0064E28C /* RestrictionSchedule.swift in Sources */,
-				04FA31E529D6B20C00761BE6 /* ContentView.swift in Sources */,
 				04FA31E329D6B20C00761BE6 /* Quit_SocialApp.swift in Sources */,
 				04E87FEF29E4249400185E4D /* AppGroupView.swift in Sources */,
 			);

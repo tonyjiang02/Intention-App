@@ -21,10 +21,9 @@ class RestrictionSchedule {
         intervalStart: DateComponents(hour:0, minute: 0), intervalEnd: DateComponents(hour: 11, minute: 59), repeats: true
     )
     
-    static public func setSchedule() {
-        print(AppSelection.shared.selections.applicationTokens.count)
+    static public func setSchedule(minutes: Int) {
         let events: [DeviceActivityEvent.Name: DeviceActivityEvent] = [
-            .discouraged: DeviceActivityEvent(applications: AppSelection.shared.selections.applicationTokens, threshold: DateComponents(minute: 1))
+            .discouraged: DeviceActivityEvent(applications: AppSelection.shared.selections.applicationTokens, threshold: DateComponents(minute: minutes))
         ]
         let center = DeviceActivityCenter()
         do {
