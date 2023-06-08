@@ -31,19 +31,25 @@ class AppGroupViewModel: ObservableObject {
         }
     }
 
+//    func saveGroup() {
+//        let encoder = JSONEncoder()
+//        if let encodedData = try? encoder.encode(appGroup) {
+//            UserDefaults.standard.set(encodedData, forKey: "\(appGroup.key)")
+//        }
+//        if let appGroupsString = UserDefaults.standard.string(forKey: "AppGroups") {
+//            let newAppGroupsString = appGroupsString + "\(appGroup.key),"
+//            UserDefaults.standard.set(newAppGroupsString, forKey: "AppGroups")
+//        } else {
+//            let groupsString = "\(appGroup.key),"
+//            UserDefaults.standard.set(groupsString, forKey: "AppGroups")
+//        }
+//        // add uuid to list of groups
+//    }
     func saveGroup() {
         let encoder = JSONEncoder()
         if let encodedData = try? encoder.encode(appGroup) {
-            UserDefaults.standard.set(encodedData, forKey: "\(appGroup.key)")
+            UserDefaults.standard.set(encodedData, forKey: "AppGroup")
         }
-        if let appGroupsString = UserDefaults.standard.string(forKey: "AppGroups") {
-            let newAppGroupsString = appGroupsString + "\(appGroup.key),"
-            UserDefaults.standard.set(newAppGroupsString, forKey: "AppGroups")
-        } else {
-            let groupsString = "\(appGroup.key),"
-            UserDefaults.standard.set(groupsString, forKey: "AppGroups")
-        }
-        // add uuid to list of groups
     }
 
     static func decodeGroup(data: Data?) -> AppGroup? {

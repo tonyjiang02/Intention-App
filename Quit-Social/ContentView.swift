@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var isAppGroupViewActive: Bool = false
     @State private var isSpecificAppGroupViewActive = false
     @ObservedObject var dashboardViewModel = DashboardViewModel()
+    @State private var progress: Float = 0.5
 
     init() {
         // log out user defaults
@@ -20,7 +21,20 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                LazyVStack(alignment: .leading) {
+                HStack {
+                    VStack(alignment: .leading) {
+                        Text("Hello Tony 👋").font(.title)
+                    }
+                    Spacer()
+                }
+                HStack {
+                    VStack {
+                        Text("Here are your usage stats today").font(.title2)
+                        ProgressView(value: progress)
+                    }
+                }
+                
+                LazyVStack {
                     ForEach(dashboardViewModel.groupDataList) { group in
                         AppGroupCard(appGroup: group).onTapGesture {
                             self.dashboardViewModel.currentlySelectedAppGroup = group
@@ -28,19 +42,25 @@ struct ContentView: View {
                         }
                     }
                 }
-                Button(action: {
-                    isAppGroupViewActive = true
-                }) {
-                    Image(systemName: "plus")
-                        .font(.title)
-                        .padding()
+                if dashboardViewModel.groupDataList.count > 0 {
+                    Text("Tap to edit restriction")
+                } else {
+                    Button(action: {
+                        isAppGroupViewActive = true
+                    }) {
+                        Image(systemName: "plus")
+                            .font(.title)
+                            .padding()
+                    }
                 }
+                
                 Spacer()
-            }.navigationDestination(isPresented: $isAppGroupViewActive) {
-                AppGroupView(appGroupViewModel: AppGroupViewModel())
-            }.navigationDestination(isPresented: $isSpecificAppGroupViewActive) {
-                AppGroupView(appGroupViewModel: AppGroupViewModel(group: dashboardViewModel.currentlySelectedAppGroup))
-            }
+            }.padding()
+                .navigationDestination(isPresented: $isAppGroupViewActive) {
+                    AppGroupView(appGroupViewModel: AppGroupViewModel())
+                }.navigationDestination(isPresented: $isSpecificAppGroupViewActive) {
+                    AppGroupView(appGroupViewModel: AppGroupViewModel(group: dashboardViewModel.currentlySelectedAppGroup))
+                }
         }
 //        NavigationStack {
 //            NavigationLink(destination: AppGroupView()) {

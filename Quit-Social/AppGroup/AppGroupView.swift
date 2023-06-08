@@ -13,7 +13,7 @@ struct AppGroupView: View {
     @State var activityPickerPresented = false
     @State var title = ""
     @State private var showTimeLimitInfo = false
-    @StateObject var appSelection = AppSelection.shared
+    @StateObject private var appSelection = AppSelection.shared
     @ObservedObject var appGroupViewModel: AppGroupViewModel
     func toTimeString(_ selection: Int) -> String {
         if selection < 4 {
@@ -30,6 +30,9 @@ struct AppGroupView: View {
     func saveRestrictions() {
         appGroupViewModel.saveGroup()
         presentationMode.wrappedValue.dismiss()
+        appSelection.selections = appGroupViewModel.appGroup.selection
+        appSelection.setShieldRestrictions()
+        RestrictionSchedule.setSchedule(minutes: appGroupViewModel.appGroup.timeLimitSelection * 15)
 //        print("Saving \(appGroupViewModel.appGroup.selection.applicationTokens.count) apps")
 //        appSelection.selections = appGroupViewModel.appGroup.selection
 //        appSelection.setShieldRestrictions()
